@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>Beat Maker</title>
+    </head>
+    <body>
+        <div class="column">
+            <div id="header" class="center">
+                <button id="clear">Clear</button>
+                <button id="play">Play</button>
+                <button id="stop">Stop</button>
+                <p>bpm: <input type="text"  id="bpmOut" value="120"></p>
+                <input type="range" id="bpm" min="50" max="200" value="120" step="1">
+                <select id="signiture">
+                    <option value="44">4/4</option>
+                    <option value="43">4/3</option>
+                </select>
+            </div>
+            <div id="pageHolder" class="center">
+                <div id="trackHolder" class="column">
+                    <div id="bass" class="track center">
+                        <div class="name">
+                            <p>Bass:</p>
+                            <input id="bassVolume" type="range" min="0" max="1" step="0.1" value="0.3">
+                        </div>
+                        <div class="noteHolder center">
+                        </div>
+                    </div>
+                    <div id="snare" class="track center">
+                        <div class="name">
+                            <p>Snare:</p>
+                            <input id="snareVolume" type="range" min="0" max="1" step="0.1" value="0.3">
+                        </div>
+                        <div class="noteHolder center">
+                        </div>
+                    </div>
+                    <div id="hi" class="track center">
+                        <div class="name">
+                            <p>Hi-Hat:</p>
+                            <p>(ctrl for open)</p>
+                            <input id="hiVolume" type="range" min="0" max="1" step="0.1" value="0.3">
+                        </div>
+                        <div class="noteHolder center">
+                        </div>
+                    </div>
+                    <div id="floor" class="track center">
+                        <div class="name">
+                            <p>Floor Tom:</p>
+                            <input id="floorVolume" type="range" min="0" max="1" step="0.1" value="0.3">
+                        </div>
+                        <div class="noteHolder center">
+                        </div>
+                    </div>
+                    <div id="mid" class="track center">
+                        <div class="name">
+                            <p>Mid Tom:</p>
+                            <input id="midVolume" type="range" min="0" max="1" step="0.1" value="0.3">
+                        </div>
+                        <div class="noteHolder center">
+                        </div>
+                    </div>
+                    <div id="high" class="track center">
+                        <div class="name">
+                            <p>High Tom:</p>
+                            <input id="highVolume" type="range" min="0" max="1" step="0.1" value="0.3">
+                        </div>
+                        <div class="noteHolder center">
+                        </div>
+                    </div>
+                    <div id="crash" class="track center">
+                        <div class="name">
+                            <p>Crash:</p>
+                            <input id="crashVolume" type="range" min="0" max="1" step="0.1" value="0.3">
+                        </div>
+                        <div class="noteHolder center">
+                        </div>
+                    </div>
+                </div>
+                <div id="sequence" class="column">
+                    <div id="sequenceHolder">
+                        <button id="addNode">Add</button>
+                        <button id="removeNode">Delete</button>
+                        <button id="toMP3">MP3</button>
+                    </div>
+                    <img src="drum guide.png">
+                </div>
+            </div>
+        </div>
+
+	<script src="script.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="client.js"></script>
+    </body>
+</html>
