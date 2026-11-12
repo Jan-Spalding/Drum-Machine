@@ -1,6 +1,6 @@
 # Drumming Machine
 
-<img src="https://raw.githubusercontent.com/Jan-Spalding/Drum-Machine/refs/heads/master/Drum%20Machine%20Thumbnail.png>
+<img src="https://raw.githubusercontent.com/Jan-Spalding/Drum-Machine/refs/heads/master/Drum%20Machine%20Thumbnail.png">
 
 ### Description
 This is a personal project related to my music interest. Since I play guitar I'd love to cover my favorite songs. To try keep in track I wanted to make a drumming machine so I could better practice pieces. 
@@ -20,6 +20,7 @@ Using the add you can add tracks. Delete button will delete the track that is se
 Reason there is a server involved with this project I decided that I wanted to write my own export function. I was reading how to construct your own files as I was interested in the actual data that gets saved into a file.
 
 https://docs.fileformat.com/audio/wav/
+
 https://www.mmsp.ece.mcgill.ca/Documents/AudioFormats/WAVE/WAVE.html
 
 Following the readings of these documents and writing a test file in python I was able to use the tracks to then make the track. If I wanted to cover songs then I'd need to use the audio to then put into audacity.
